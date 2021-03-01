@@ -1,7 +1,7 @@
 <?php
-require '/usr/share/php/libphp-phpmailer/class.phpmailer.php';
-require '/usr/share/php/libphp-phpmailer/class.smtp.php';
-$mail = new PHPMailer;
+require '/PHPmailer/class.phpmailer.php';
+require '/PHPmailer/class.smtp.php';
+$mail = new PHPMailer
 $mail->setFrom('admin@example.com');
 $mail->addAddress('ahelperbd@gmail.com');
 $mail->Subject = 'Message sent by PHPMailer';
@@ -13,7 +13,7 @@ $mail->SMTPAuth = true;
 $mail->Port = 465;
 
 //Set your existing gmail address as user name
-$mail->Username =' <a href="mailto:'testerbd18@gmail.com">'testerbd18@gmail.com</a>';
+$mail->Username = <a href="mailto:'testerbd18@gmail.com">'testerbd18@gmail.com</a>';
 
 //Set the password of your gmail address here
 $mail->Password = 'password';
